@@ -1,9 +1,7 @@
 ---
 layout: default
-title: Home
+title: Incorporate Deep Learning Model to Better Predict Individual Gene Expression
 ---
-
-# Deep Learning & Gene Expression
 
 
 ## 🏠 Welcome!  
