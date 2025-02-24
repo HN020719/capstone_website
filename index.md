@@ -3,7 +3,6 @@ layout: default
 title: Incorporate Deep Learning Model to Better Predict Individual Gene Expression
 ---
 
-
 ## 🏠 Welcome!  
 Welcome to our project website! Here, we present an overview of our research in an engaging and accessible way. Whether you're a recruiter, researcher, or just curious about our work, we invite you to explore our findings and see the impact of our project.
 
