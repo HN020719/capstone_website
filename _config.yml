@@ -1,3 +1,5 @@
-theme: minimal
-title: Deep Learning & Gene Expression
-description: A project on deep learning for gene expression analysis.
+remote_theme: "JustGoodThemes/Scriptor-Jekyll-Theme"
+plugins:
+  - jekyll-remote-theme
+title: ""
+description: "Analyzing Recipe Ratings and Healthiness with Machine Learning"
