@@ -50,6 +50,49 @@ Recent advances in **deep learning** have enabled accurate prediction of gene ex
 
 ---
 
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!20]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=yellow!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\begin{document}
+
+\begin{center}
+    \begin{tikzpicture}[node distance=2.5cm]
+
+        % Nodes
+        \node (start) [startstop] {Start: Genotype & Expression Data};
+        \node (vcf) [process, below of=start] {Extract Genotype from VCF};
+        \node (modGenome) [process, below of=vcf] {Modify hg38 with Individual Variants};
+        \node (onehot) [process, below of=modGenome] {Convert to One-Hot Encoding};
+        \node (enformer) [process, below of=onehot] {Run Enformer for Gene Expression Prediction};
+        \node (aggregate) [process, below of=enformer] {Aggregate Predictions \& Extract CAGE Tracks};
+        \node (normalize) [process, below of=aggregate] {Log Transform \& Z-score Normalization};
+        \node (adjust) [process, below of=normalize] {Adjust Predictions using Ridge Regression \& RF};
+        \node (compare) [process, below of=adjust] {Compare vs True Expression \& PRS};
+        \node (end) [startstop, below of=compare] {End: Evaluate Performance};
+
+        % Arrows
+        \draw [arrow] (start) -- (vcf);
+        \draw [arrow] (vcf) -- (modGenome);
+        \draw [arrow] (modGenome) -- (onehot);
+        \draw [arrow] (onehot) -- (enformer);
+        \draw [arrow] (enformer) -- (aggregate);
+        \draw [arrow] (aggregate) -- (normalize);
+        \draw [arrow] (normalize) -- (adjust);
+        \draw [arrow] (adjust) -- (compare);
+        \draw [arrow] (compare) -- (end);
+
+    \end{tikzpicture}
+\end{center}
+
+\end{document}
+
+
 ## 🎯 Conclusion & Next Steps  
 
 📌 **What’s Next?**  
