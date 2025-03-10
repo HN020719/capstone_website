@@ -6,7 +6,7 @@ title: Incorporate Deep Learning Model to Better Predict Individual Gene Express
 
 ## 🏠 Welcome!  
 
-📌 **Quick Links:**  
+📌 **Quick Links:**  https://github.com/Kevinxsn/deep_learning_and_gene_expression
 
 ---
 
