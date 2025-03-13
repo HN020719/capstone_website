@@ -10,6 +10,8 @@ title: "Incorporate Deep Learning Model to Better Predict Individual Gene Expres
 
 ---
 
+![background](assets/images/24871741225431_.pic.jpg "Figure 0: background")
+
 ## 🔍 Introduction  
 
 Alzheimer’s Disease (AD) is a progressive neurodegenerative disorder, with **APOE** identified as the strongest genetic risk factor. Genome-wide association studies (GWAS) have uncovered genetic loci associated with AD, but they do not directly explain the impact of variants on gene expression. Expression quantitative trait loci (eQTL) analysis bridges this gap by linking genetic variants to transcriptional changes.
