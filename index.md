@@ -27,17 +27,6 @@ Recent advances in **deep learning** have enabled accurate prediction of gene ex
 
 ---
 
-graph TD;
-    A[Extract Genotype Data] -->|VCF to PLINK| B(Modify Reference Genome)
-    B --> |Apply Individual Variants| C[Convert to One-Hot Encoding]
-    C --> D[Run Enformer Model]
-    D -->|Predict Gene Expression| E[All Genes for Selected Samples]
-    D -->|Predict Expression for Selected Genes| F[All Samples]
-    E & F --> G[Aggregate Predictions]
-    G --> H[Extract CAGE Tracks & Normalize]
-    H --> I[Apply Ridge Regression & Random Forest]
-    I --> J[Compare to True Gene Expression & PRS]
-
 
 ## 🛠 Methods  
 
